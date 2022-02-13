@@ -77,7 +77,7 @@ export default function SinglePost() {
                     />
                 ) : (
                     <h1 className="singlePostTitle">
-                        {user?.username}
+                        {user?.username}'s Profile
                         {/* Affichage des icons delete et edit : si l'utilistaeur == l'auteur
                         et s'il est deja un utilisateur (user?.username) */}
                         {(post.username === user?.username)?(
