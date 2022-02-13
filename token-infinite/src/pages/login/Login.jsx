@@ -48,8 +48,8 @@ export default function Login() {
                         
                         <span className="loginTitle">Login</span>
                         <form className="loginForm" onSubmit={handleSubmit}>
-                            <label>Username</label>
-                            <input type="text" className="loginInput" placeholder="Enter your username..." 
+                            <label>Organisation</label>
+                            <input type="text" className="loginInput" placeholder="Enter your organisation..." 
                             ref={userRef} autoFocus/>
 
                             <label>Password</label>

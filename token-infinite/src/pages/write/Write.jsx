@@ -90,7 +90,7 @@ export default function Write() {
                           <div className="col">
                             <div className="form-group shadow-textarea">
                             <textarea 
-                                placeholder="Give description ..." 
+                                placeholder="Write details of your organisation ..." 
                                 type="text"
                                 className="writeInput writeText form-control"
                                 onChange={(e)=> setinfo(e.target.value)}

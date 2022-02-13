@@ -63,7 +63,7 @@ export default function Register() {
 
 
                         <label>Organisation</label>
-                        <input type="text" className="registerInput" placeholder="Enter your username..." 
+                        <input type="text" className="registerInput" placeholder="Enter your organisation..." 
                         onChange={e=> setUsername(e.target.value)} autoFocus/>
                         
                         <label>Email</label>
