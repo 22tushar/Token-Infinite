@@ -30,6 +30,8 @@
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer;
+    margin-top: 2rem !important;
+
 }
 
 .topCenter{
@@ -38,9 +40,10 @@
 
 .topList{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 0;
-    padding: 0;
+    padding: 7rem;
+    margin-top: 2rem;
     list-style: none;
 }
 
@@ -49,11 +52,4 @@
     font-size: 18px;
     font-weight: 300;
     cursor: pointer;
-}
-
-.topSearchIcon{
-    font-size: 18px;
-    color: #666;
-    cursor: pointer;
-    margin-left: 15px;
 }

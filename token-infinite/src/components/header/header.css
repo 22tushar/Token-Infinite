@@ -13,8 +13,9 @@
     margin-bottom: 200px;
 }
 .Title{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 700;
+    margin-top: 10rem !important;
 }
 
 .btn{
@@ -25,8 +26,9 @@
 }
 
 .headerImg{
-    height:40%;
-    width:50%;
+    height: 70%;
+    width: 70%;
+    float: right;
 }
 .img{
      height:60%;
