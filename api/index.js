@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const multer = require("multer");
 const cors = require("cors");
 const path = require("path");
+const PORT = process.env.PORT || 5000
 
 
 const authRoute = require("./routes/auth");
@@ -62,6 +63,10 @@ app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 app.use("/api/mail", mailRouter);
 
-app.listen("5000",()=>{
+if ( process.env.NODE_ENV == "production"){
+    app.use(express.static("client/build"));
+}
+
+app.listen( PORT ,()=>{
     console.log("Back-end is runing");
 })
