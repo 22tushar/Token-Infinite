@@ -6,7 +6,7 @@ import registerimage from '../../images/registerimage.png'
 
 export default function Register() {
     const [username, setUsername] = useState("")
-    const [role, setrole] = useState("")
+    const [role, setrole] = useState("TPO")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [error, setError] = useState(false)
@@ -50,10 +50,19 @@ export default function Register() {
                         <form className="registerForm" onSubmit={handleSubmit}>
 
                         <label>Role</label>
-                        <input type="text" className="registerInput" placeholder="Enter your role..." 
-                        onChange={e=> setrole(e.target.value)} autoFocus/>
+                        {/* <input type="text" className="registerInput" placeholder="Enter your role..." 
+                        onChange={e=> setrole(e.target.value)} autoFocus/> */}
+
+
+                        <select className="select-styles" onChange={(e)=>setrole(e.target.value)}>
+
+                            <option value="TPO">TPO</option>
+                            <option value="Company">Company</option>
                         
-                        <label>Username</label>
+                        </select>
+
+
+                        <label>Organisation</label>
                         <input type="text" className="registerInput" placeholder="Enter your username..." 
                         onChange={e=> setUsername(e.target.value)} autoFocus/>
                         

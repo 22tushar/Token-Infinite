@@ -39,11 +39,11 @@ export default function Login() {
 
             <div class="container">
                 <div class="row">
-                    {/* <div class="col">
+                    <div class="col">
 
                         <img src={loginimage} />
 
-                    </div> */}
+                    </div>
                     <div class="col">
                         
                         <span className="loginTitle">Login</span>

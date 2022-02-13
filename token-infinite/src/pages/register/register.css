@@ -1,3 +1,4 @@
+
 .register{
     height: calc(100vh - 50px);
     display: flex;
@@ -54,3 +55,10 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+.select-styles{
+    height: 45px;
+    border-color: lightcoral;
+}
+
+
