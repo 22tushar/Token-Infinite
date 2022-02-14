@@ -63,9 +63,10 @@ app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 app.use("/api/mail", mailRouter);
 
-if ( process.env.NODE_ENV == "production"){
-    app.use(express.static("client/build"));
-}
+app.use(express.static(path.join(__dirname, "client", "build")))
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 app.listen( PORT ,()=>{
     console.log("Back-end is runing");
